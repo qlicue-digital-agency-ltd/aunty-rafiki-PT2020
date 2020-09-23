@@ -1,4 +1,4 @@
-package com.example.aunty_rafiki
+package com.qlicue.aunty_rafiki_pt
 
 import io.flutter.embedding.android.FlutterActivity
 

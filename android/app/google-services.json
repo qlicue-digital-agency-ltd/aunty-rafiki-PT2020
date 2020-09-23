@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "46725380680",
+    "firebase_url": "https://aunty-rafiki-pt-109c9.firebaseio.com",
+    "project_id": "aunty-rafiki-pt-109c9",
+    "storage_bucket": "aunty-rafiki-pt-109c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46725380680:android:da4c5de954f803915ff67d",
+        "android_client_info": {
+          "package_name": "com.qlicue.aunty_rafiki_pt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46725380680-o46l3nfpiflsqv8er58vcunhiuq3c0cv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qlicue.aunty_rafiki_pt",
+            "certificate_hash": "bad516ac329b6c8c0dceb56d89f716aa39254953"
+          }
+        },
+        {
+          "client_id": "46725380680-tvhvp9391hve3h9r8gabat70j9450nt5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9dSrBGGN-D6bhcc8ZlC-7zWjUV9HKl-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46725380680-tvhvp9391hve3h9r8gabat70j9450nt5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
