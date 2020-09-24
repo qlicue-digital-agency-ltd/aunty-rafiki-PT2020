@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
     ChatScreen(),
     BabyBumpScreen(),
     AppointmentScreen(),
-    ProfileScreen()
+    ProfileScreen(),
   ];
 
   @override
