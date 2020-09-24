@@ -5,7 +5,7 @@ class AppointmentScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        child: Text('Appointment screen'),
+        child: Text('Appointment Screen'),
       ),
     );
   }
