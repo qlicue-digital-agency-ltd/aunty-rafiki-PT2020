@@ -29,6 +29,7 @@ class _ChatRoomPageState extends State<ChatRoomPage> {
     return Scaffold(
       backgroundColor: Color(0xfff7f7f7),
       appBar: AppBar(
+        
         leading: Platform.isAndroid
             ? null
             : FlatButton(
@@ -45,9 +46,7 @@ class _ChatRoomPageState extends State<ChatRoomPage> {
                   _chatProvider.selectedChat.unreadMessageCounter == 0
                       ? Container()
                       : Expanded(
-                        
                           child: Text(
-                            
                               _chatProvider.selectedChat.unreadMessageCounter
                                   .toString(),
                               style:
@@ -55,6 +54,7 @@ class _ChatRoomPageState extends State<ChatRoomPage> {
                 ]),
                 onPressed: () => Navigator.pop(context)),
         title: ListTile(
+
           leading: CircleAvatar(
             backgroundImage: AssetImage(_chatProvider.selectedChat.avatar),
           ),

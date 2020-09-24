@@ -15,7 +15,7 @@ class MessageTile extends StatelessWidget {
             alignment:
                 message.sentByMe ? Alignment.centerRight : Alignment.centerLeft,
             child: Container(
-              margin: EdgeInsets.only(left:10),
+              margin: EdgeInsets.only(left: 10),
               padding: EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 10),
               decoration: BoxDecoration(
                   borderRadius: message.sentByMe
@@ -31,15 +31,14 @@ class MessageTile extends StatelessWidget {
               child: Stack(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(right: 10,bottom:15.0),
+                    padding: const EdgeInsets.only(right: 10, bottom: 15.0),
                     child: Text(message.text,
                         textAlign: TextAlign.start,
                         style: TextStyle(
                             fontSize: 16,
                             fontFamily: 'OverpassRegular',
                             fontWeight: FontWeight.w300)),
-                  ), 
-
+                  ),
                   Positioned(
                     bottom: 0,
                     right: 0,
@@ -80,7 +79,7 @@ class MessageTile extends StatelessWidget {
               child: Stack(
                 children: [
                   Container(
-                      padding: EdgeInsets.all(10),
+                     
                       color: Colors.white,
                       child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -100,6 +99,9 @@ class MessageTile extends StatelessWidget {
                                     ],
                                   )
                                 : Text(message.sender)),
+                            SizedBox(
+                              height: 10,
+                            ),
                             Text(message.text,
                                 textAlign: TextAlign.start,
                                 style: TextStyle(
