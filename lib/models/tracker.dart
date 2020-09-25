@@ -7,14 +7,14 @@ class TrackerModel {
   final String image;
 
   TrackerModel({
-    @required this.title,
+    @required  this.title,
     @required this.subtitle,
     @required this.supportTEXT,
     @required this.image,
   });
 }
 
-List<TrackerModel> trackers = [
+List <TrackerModel> trackers = [
   TrackerModel(
     title: 'First Week',
     subtitle: 'Expert Advice',

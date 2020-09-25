@@ -9,6 +9,7 @@ class Trackercard extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
       child: Card(
+        elevation: 10,
         clipBehavior: Clip.antiAlias,
         child: Container(
           child: Column(
