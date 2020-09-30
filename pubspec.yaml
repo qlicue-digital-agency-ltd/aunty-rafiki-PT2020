@@ -32,6 +32,10 @@ dependencies:
   timeline_tile: ^1.0.0
   intl: ^0.16.1
   time_formatter: ^1.0.0
+  video_player: ^0.11.0
+  audioplayers: ^0.16.1
+  table_calendar: ^2.2.3
+  date_time_picker: ^1.0.2
 
 dev_dependencies:
   flutter_test:
@@ -53,6 +57,7 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/baby/
+    - assets/chats/
     - assets/images/gif/
 
   # An image asset can refer to one or more resolution-specific "variants", see
