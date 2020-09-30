@@ -5,24 +5,39 @@ import 'package:intl/intl.dart';
 class ChatTile extends StatelessWidget {
   final Chat chat;
   final Function onTap;
+  final Function onTapAvatar;
 
-  const ChatTile({Key key, @required this.chat, @required this.onTap})
+  // Widget onTapAvatar() {
+  //   return SimpleDialog(
+  //     children: [
+  //       SimpleDialogOption(
+  //         child: Text('data'),
+  //       )
+  //     ],
+  //   );
+  // }
+
+  const ChatTile({Key key, @required this.chat, @required this.onTap, @required
+  this.onTapAvatar})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      child: Container(
-        height: 100,
-        child: Row(children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(10.0),
+    return Container(
+      height: 80,
+      child: Row(children: <Widget>[
+        Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: InkWell(
+            onTap: onTapAvatar,
             child: CircleAvatar(
-              radius: 35,
+              radius: 30,
               backgroundImage: AssetImage(chat.avatar),
             ),
           ),
-          Expanded(
+        ),
+        Expanded(
+          child: InkWell(
+            onTap: onTap,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -39,6 +54,9 @@ class ChatTile extends StatelessWidget {
                               style: TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 18),
                             ),
+                            SizedBox(
+                              height: 5,
+                            ),
                             Text(chat.messages.last.text)
                           ]),
                     ),
@@ -49,11 +67,15 @@ class ChatTile extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: <Widget>[
-                              Text(DateFormat('yyyy-MM-dd').format(chat.date),
+                              Text(DateFormat('dd/MM/yyyy').format(chat.date),
                                   style: TextStyle(
+                                      fontSize: 12,
                                       color: chat.unreadMessageCounter > 0
                                           ? Theme.of(context).primaryColor
                                           : Colors.black38)),
+                              SizedBox(
+                                height: 5,
+                              ),
                               chat.unreadMessageCounter > 0
                                   ? CircleAvatar(
                                       radius: 12,
@@ -62,7 +84,7 @@ class ChatTile extends StatelessWidget {
                                       child: Text(
                                         chat.unreadMessageCounter.toString(),
                                         style: TextStyle(
-                                            color: Colors.white, fontSize: 12),
+                                            color: Colors.white, fontSize: 10),
                                       ))
                                   : Container()
                             ]),
@@ -73,9 +95,9 @@ class ChatTile extends StatelessWidget {
                 Divider()
               ],
             ),
-          )
-        ]),
-      ),
+          ),
+        ),
+      ]),
     );
   }
 }

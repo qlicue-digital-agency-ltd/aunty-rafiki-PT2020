@@ -136,7 +136,7 @@ class ChatProvider with ChangeNotifier {
           ]),
       Chat(
           avatar: 'assets/images/b.jpg',
-          name: 'Goup Soccer',
+          name: 'Group Soccer',
           date: DateTime.now(),
           uuid: 'chat2',
           unreadMessageCounter: 2,
